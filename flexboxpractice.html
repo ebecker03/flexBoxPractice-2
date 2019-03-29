@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        header {
+            background-color: black;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: black;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            clear: both;
+        }
+
+        .blue {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            flex-basis: calc((100% / 3) - 10px);
+            height: 10vw;
+            margin: 5px;
+        }
+
+        .red {
+            background-color: red;
+            color: white;
+            text-align: center;
+            flex-basis: calc((100% / 3)-10px);
+            height: 10vw;
+            margin: 5px;
+        }
+
+        .container-row {
+            
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            justify-content:flex-start;
+            justify-content: space-around;
+            width: 70%;
+            float: left;
+        }
+
+        .container-col {
+            display: flex;
+            flex-flow: column;
+            flex-wrap: wrap;
+            width: 30%;
+            float: left;
+        }
+
+        #one {
+            order: 0;
+        }
+
+        #two {
+            order: 2;
+        }
+
+        #three {
+            order: 5;
+        }
+
+        #four {
+            order: 3;
+        }
+
+        #five {
+            order: 4;
+        }
+
+        #six {
+            order: 1;
+        }
+
+        #redOne {
+            order: 2;
+        }
+
+        #redTwo {
+            order: 0;
+        }
+
+        #redThree {
+            order: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>Header</header>
+
+    <div>
+        <div class="container-row">
+            <div class="blue" id="one">1</div>
+            <div class="blue" id="two">2</div>
+            <div class="blue" id="three">3</div>
+            <div class="blue" id="four">4</div>
+            <div class="blue" id="five">5</div>
+            <div class="blue" id="six">6</div>
+        </div>
+        <div class="container-col">
+            <div class="red" id="redOne">1</div>
+            <div class="red" id="redTwo">2</div>
+            <div class="red" id="redThree">3</div>
+        </div>
+    </div>
+
+    <footer>Footer</footer>
+</body>
+
+</html>
